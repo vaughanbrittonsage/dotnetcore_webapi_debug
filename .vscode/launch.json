@@ -5,11 +5,11 @@
    "version": "0.2.0",
    "configurations": [
     {
-        "name": ".NET Core Docker Launch",
+        "name": "API Docker Launch",
         "type": "coreclr",
         "request": "launch",                   
         "preLaunchTask": "buildForDebug",      
-        "program": "/app/out/dotnetcore_api_sample.dll",          
+        "program": "/app/out/api.dll",          
         "cwd": "/app/out",                     
         "sourceFileMap": {
             "/app": "${workspaceRoot}"     
