@@ -13,10 +13,10 @@ RUN apt-get update \
 RUN mkdir /app
 WORKDIR /app
 
-COPY ./dotnetcore_api_sample.csproj /app
+COPY ./src/api/dotnetcore_api_sample.csproj /app
 RUN dotnet restore
 
-COPY . /app
+COPY ./src/api /app
 RUN dotnet publish -c Debug -o out
 
 # Kick off a container just to wait debugger to attach and run the app
