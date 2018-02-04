@@ -8,6 +8,14 @@
             "command": "./scripts/build.sh",
             "isBuildCommand": false,
             "showOutput": "always"
+        },
+        {
+            "type": "shell",
+            "taskName": "Run Tests",
+            "suppressTaskName": true,
+            "command": "docker exec -i test_runner dotnet test --logger:trx",
+            "isBuildCommand": false,
+            "showOutput": "always"
         }
     ]
 }

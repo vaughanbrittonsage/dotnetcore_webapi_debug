@@ -5,7 +5,7 @@
    "version": "0.2.0",
    "configurations": [
     {
-        "name": ".NET Core Docker Launch",
+        "name": "API Docker Launch",
         "type": "coreclr",
         "request": "launch",                   
         "preLaunchTask": "buildForDebug",      
