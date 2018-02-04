@@ -13,7 +13,7 @@ RUN apt-get update \
 RUN mkdir /app
 WORKDIR /app
 
-COPY ./src/api/dotnetcore_api_sample.csproj /app
+COPY ./src/api/api.csproj /app
 RUN dotnet restore
 
 COPY ./src/api /app
