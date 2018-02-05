@@ -12,7 +12,7 @@
         "program": "/app/out/api.dll",          
         "cwd": "/app/out",                     
         "sourceFileMap": {
-            "/app": "${workspaceRoot}"     
+            "/app": "${workspaceRoot}/src/api"     
         },
         "pipeTransport": {
             "pipeProgram": "docker",            

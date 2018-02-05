@@ -1,0 +1,13 @@
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/bin/Debug/netcoreapp2.0/api.unit.tests.deps.json
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/bin/Debug/netcoreapp2.0/api.unit.tests.runtimeconfig.json
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/bin/Debug/netcoreapp2.0/api.unit.tests.runtimeconfig.dev.json
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/bin/Debug/netcoreapp2.0/api.unit.tests.dll
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/bin/Debug/netcoreapp2.0/api.unit.tests.pdb
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/obj/Debug/netcoreapp2.0/api.unit.tests.csproj.CoreCompileInputs.cache
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/obj/Debug/netcoreapp2.0/api.unit.tests.AssemblyInfoInputs.cache
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/obj/Debug/netcoreapp2.0/api.unit.tests.AssemblyInfo.cs
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/obj/Debug/netcoreapp2.0/api.unit.tests.dll
+/home/developer/development/dotnetcore_api_sample/src/api.unit.tests/obj/Debug/netcoreapp2.0/api.unit.tests.pdb

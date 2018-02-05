@@ -8,8 +8,3 @@ services:
     - "5001:5001"
     environment:
     - ASPNETCORE_URLS=http://+:5001
-  test_runner:
-    build: 
-      context: .
-      dockerfile: Dockerfile.test
-    container_name: test_runner

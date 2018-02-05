@@ -4,32 +4,31 @@ WORKDIR /src
 # copy csproj and restore as distinct layers
 COPY ./src/*.sln .
 COPY ./src/api/*.csproj ./api/
-COPY ./src/api.tests/*.csproj ./api.tests/
+COPY ./src/api.unit.tests/*.csproj ./api.unit.tests/
 RUN dotnet restore
 
 # copy and build everything else
 COPY ./src/api/. ./api/
-COPY ./src/api.tests/. ./api.tests/
+COPY ./src/api.unit.tests/. ./api.unit.tests/
 
 RUN dotnet build
 
 FROM build AS testrunner
-WORKDIR /src/api.tests
+WORKDIR /src/api.unit.tests
 ENTRYPOINT ["dotnet", "test","--logger:trx"]
 
 FROM build AS test
-WORKDIR /src/api.tests
+WORKDIR /src/api.unit.tests
 RUN dotnet test
-
-FROM test AS debug
-WORKDIR /src/api
-RUN dotnet publish -c Debug -o out
 
 FROM test AS publish
 WORKDIR /src/api
-RUN dotnet publish -o out
+RUN dotnet publish -c release -r linux-x64 --self-contained -o out /p:LinkDuringPublish=true
 
-FROM microsoft/dotnet:2.0-runtime AS runtime
+FROM microsoft/dotnet:2.0-runtime-deps AS runtime
 WORKDIR /src/api
+ENV ASPNETCORE_URLS=http://+:5001
+EXPOSE 5001/tcp
 COPY --from=publish /src/api/out ./
-ENTRYPOINT ["dotnet", "api.dll"]
+RUN chmod +x api
+CMD ["./api"]
